@@ -5,7 +5,7 @@ from src.exception import CustomException
 import dill
 import base64
 import yaml
-def save_obejct(file_path:str,obj:object)->None:
+def save_object(file_path:str,obj:object)->None:
     logging.debug("Entered save object function")
     try:    
         os.makedirs(os.path.dirname(file_path),exist_ok=True)
