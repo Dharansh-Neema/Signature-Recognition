@@ -9,3 +9,11 @@ class DataTransformationArtifact:
 
     def to_dict(self):
         return self.__dict__
+
+
+@dataclass
+class ModelTrainerArtifact:
+    trained_model_path : str
+
+    def to_dict(self):
+        return self.__dict__
